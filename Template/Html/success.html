@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../Css/success.css">
+  
+    <script>
+        "use strict";
+
+        let login = sessionStorage.getItem("logined");
+        if (login == null || login == undefined) {
+            document.location.href = "";
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="userInfo"><b><em>USER INFO</em></b></h1>
+        <div class="about-user">
+            <h1>Hi! Dear <i id="userName"></i> - Your email is <em id="userEmail"></em></h1>
+            <div class="name">
+              
+                <h3 id="showN">Name: </h3>
+            </div>
+          
+          
+            <div class="email">
+              
+                <h3 id="showE">Email: </h3>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        "use strict";
+
+        $(document).ready(function () {
+            let userInfo = JSON.parse(sessionStorage.userInfo)
+            $("#userName").html(userInfo.userName);
+            $("#userEmail").html(userInfo.userEmail);
+            $("#showN").append(userInfo.userName);
+            $("#showE").append(userInfo.userEmail);
+        });
+    </script>
+</body>
+
+</html>

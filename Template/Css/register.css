@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url(file:///C:/Users/User/Desktop/2006/Template/Images/backroundLog.jpeg);
+}
+
+body .register-box {
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          color: rgb(131, 99, 57);
+}
+
+body .register-box h1 {
+  float: left;
+  font-size: 40px;
+ border-bottom: 3px solid rgb(131, 99, 57);
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+
+body .register-box .text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid  rgb(131, 99, 57);
+}
+
+body .register-box .text-box i {
+  color: rgb(131, 99, 57);
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+body .register-box .text-box input {
+  border: none;
+  background: none;
+  color: rgb(131, 99, 57);
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  /* margin: 0 10px; */
+  outline: none;
+}
+
+body .register-box .text-box input::-webkit-input-placeholder {
+  color: rgb(131, 99, 57);
+}
+
+body .register-box .text-box input:-ms-input-placeholder {
+  color: rgb(131, 99, 57);
+}
+
+body .register-box .text-box input::-ms-input-placeholder {
+  color: rgb(131, 99, 57);
+}
+
+body .register-box .text-box input::placeholder {
+  color: rgb(131, 99, 57);
+}
+
+body .register-box .btn {
+  width: 100%;
+  background: none;
+  border: 2px solid   rgb(131, 99, 57);
+  color: rgb(131, 99, 57);
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+body .register-box form .button-panel input:hover, body .register-box form .button-panel a:hover {
+  color: #e2e2e2;
+  background-color:   rgb(131, 99, 57);
+}
+/*# sourceMappingURL=register.css.map */
